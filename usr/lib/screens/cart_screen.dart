@@ -33,7 +33,7 @@ class CartScreen extends StatelessWidget {
                           fit: BoxFit.cover,
                         ),
                         title: Text(cartItem.product.name),
-                        subtitle: Text('$${cartItem.product.price.toStringAsFixed(2)} x ${cartItem.quantity}'),
+                        subtitle: Text('\$${cartItem.product.price.toStringAsFixed(2)} x ${cartItem.quantity}'),
                         trailing: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
@@ -77,7 +77,7 @@ class CartScreen extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            '$${cartProvider.totalAmount.toStringAsFixed(2)}',
+                            '\$${cartProvider.totalAmount.toStringAsFixed(2)}',
                             style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
